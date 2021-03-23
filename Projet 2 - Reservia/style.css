@@ -72,97 +72,97 @@ h3 {
 
 .blue {
   color: #0065fc;
-}
-
-#searchbar {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-#searchbar input {
-  border: none;
-}
-
-#searchbar span.left {
-  margin: 0px;
-  padding: 10px 15px;
-  background-color: #F2F2F2;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border: rgb(230, 228, 228) solid 1px;
-}
-
-#searchbar span.middle {
-  border: rgb(44, 43, 43) 1px;
-  padding: 10px;
-  margin-left: -5px;
-}
-
-#searchbar span.right {
-  border: #0265fc solid 1px;
-  background-color: #0265fc;
-  padding: 10px;
-  margin-left: -5px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#searchbar span.right input {
-  color: white;
-  font-weight: bold;
-  background-color: transparent;
-  border: none;
-}
-
-#filters {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#filters h2 {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  color: black;
+  #searchbar {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-
-div.filter {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-left: 1em;
-  border: #ccc solid 1px;
-  border-radius: 30px;
-  border-left: none;
-  padding-right: 15px;
-  white-space: nowrap;
-}
-
-div.filter i {
-  padding: 15px;
-  color: #0065fc;
-  background-color: #deebff;
-  border: #cbe0ff solid 1px;
-  border-radius: 30px;
-  margin-left: -3px;
-}
-
-div.filter span {
-  margin-left: 5px;
-}
-
-div.filter a {
-  color: black;
-}
-
-#hostings p.info i {
-  color: #0065fc;
-  border-radius: 20px;
-  border: #ccc solid 1px;
-  padding: 10px 15px;
-  margin: 10px;
-}
+  
+  #searchbar input {
+    border: none;
+  }
+  
+  #searchbar span.left {
+    margin: 0px;
+    padding: 10px 15px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: rgb(230, 228, 228) solid 1px;
+  }
+  
+  #searchbar span.middle {
+    border: rgb(44, 43, 43) 1px;
+    padding: 10px;
+    margin-left: -5px;
+  }
+  
+  #searchbar span.right {
+    border: #0265fc solid 1px;
+    background-color: #0265fc;
+    padding: 10px;
+    margin-left: -5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #searchbar span.right input {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #filters {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #filters h2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: black;
+    }
+  
+  div.filter {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-left: 1em;
+    border: #ccc solid 1px;
+    border-radius: 30px;
+    border-left: none;
+    padding-right: 15px;
+    white-space: nowrap;
+  }
+  
+  div.filter i {
+    padding: 15px;
+    color: #0065fc;
+    background-color: #deebff;
+    border: #cbe0ff solid 1px;
+    border-radius: 30px;
+    margin-left: -3px;
+  }
+  
+  div.filter span {
+    margin-left: 5px;
+  }
+  
+  div.filter a {
+    color: black;
+  }
+  
+  #hostings p.info i {
+    color: #0065fc;
+    border-radius: 20px;
+    border: #ccc solid 1px;
+    padding: 10px 15px;
+    margin: 10px;
+  }
+  
+  
 
 {
   box-sizing: border-box;
