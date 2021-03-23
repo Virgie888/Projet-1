@@ -164,101 +164,183 @@ div.filter a {
   margin: 10px;
 }
 
-#hostings div.content {
+{
+  box-sizing: border-box;
+}
+
+
+.hotels{
+  display: flex; 
+  padding: 0;
+}
+
+.hotels, .populaire{
+  
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.hotels .marseille{
   display: flex;
   flex-wrap: wrap;
+
 }
-#hostings div.list {
-  width: 70%;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 20px;
-  margin: 0 30px 30px 0;
-}
-#hostings aside {
-  width: 30%;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 20px;
+
+.hotel_card{
+/*  background-color: dodgerblue;*/
+display: flex;
+flex-direction: column;
+  height: 220px;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 7px #c1c1c1;
+  margin-right:15px;
+  margin-left: 15px;
   margin-bottom: 30px;
+  flex: 30%;
 }
 
-#hostings div.list article p {
-  margin: 5px 0;
-}
-
-#hostings div.list article i {
-  font-size: 0.8em;
-  margin: -1px;
-}
-
-#hostings div.list article img {
+.hotel_card img{
   width: 100%;
-  height: 130px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  height: 145px;
   object-fit: cover;
 }
-#hostings div.list div.row {
+
+
+
+.hotel_description{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-around;
+  background-color: #fff;
+ padding: 5px 10px;
+}
+
+.hotel_description p,h3{
+  margin: 0;
+}
+
+.hotel_rate{
+  word-spacing: -1ch;
+}
+
+.fa-star{
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
+.blue_star{
+  color: #0065FC;
+}
+
+.grey_star{
+  color: #e6e1e1;
+}
+
+
+
+
+/* populaire */
+
+.populaireTab{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+
+}
+
+
+.populaireIcon{
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.populaireIcon h2{
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.populaireIcon i{
+  font-size: 1.5rem;
+}
+
+.populaireCard{
+  display: flex;
+  height: 145px;
+  width: 400px;
+  border: 5px solid #fff;
+  border-radius: 15px;
   margin-bottom: 30px;
+  box-shadow: 0 0 7px #c1c1c1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-#hostings div.list div.row article {
-  width: 29%;
-  background-color: white;
-  border-radius: 20px;
-  border: 3px solid white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+.populaireCard img{
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
 }
-#hostings div.list div.row article div.text {
-  padding: 8px;
+
+.populaireDescription{
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
-#hostings div.list article img {
-    width: 100%;
-    height: 130px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
+
+
+
+.populaireDescription .hotel_name + p{
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 1024px) {
+  .hotel_card{
+    flex: 40%;
   }
 
-  #element{
-    display:flex;
-    flex-direction:column;
+  .hotels{
+      flex-direction: column;
   }
-    #propos{
-    display:flex;
-    flex-direction:column;
-  }
-
-  #hebergement{
-    display:flex;
-    flex-direction: column;
-  }
-  
-  #assistance{
-    display:flex;
-    flex-direction:column;
+  .populaireTab{
+      display: flex;
+      flex-wrap: wrap;
   }
 
- @media (max-width: 1180px) {
-  #hostings div.list {
-    width: 96%;
+  .populaireCard{
+      flex: 30%;
+      margin-right: 10px;
   }
-  #hostings div.content {
-    flex-direction: column-reverse;
+
+  .hotels .marseille{
+      order: 2; 
   }
-  #hostings aside {
-    width: 96%;
+
+}
+
+ 
+@media (max-width: 965px) {
+
+  .populaireCard{
+     flex: 100%;
   }
 }
-@media (max-width: 800px) {
-  #hostings div.list div.row {
-    flex-direction: column;
+
+@media (max-width: 575px) {
+  .hotel_card {
+    flex: 100%;
   }
-  #hostings div.list div.row article {
-    width: 100%;
-  }
+
+  .populaireCard{
+      flex: 100%;
+   }
 }
+
