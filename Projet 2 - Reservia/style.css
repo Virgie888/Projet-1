@@ -1,3 +1,147 @@
+body {
+  padding: 30px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: black;
+}
+
+a {
+  color: #0265FC;
+  text-decoration: none;
+}
+
+#logo {
+  width: 100px;
+}
+
+#login {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+#login,
+nav, .float-right {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.light {
+  color: #949393;
+}
+
+.blue {
+  color: #0265FC;
+}
+
+#searchbar {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  ;
+}
+
+#searchbar input {
+  border: none;
+}
+
+#searchbar span.left {
+  margin: 0px;
+  padding: 10px 15px;
+  background-color: #ccc;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: #ccc solid 1px;
+}
+
+#searchbar span.middle {
+  border: #ccc solid 1px;
+  padding: 10px;
+  margin-left: -5px;
+}
+
+#searchbar span.right {
+  border: #0265FC solid 1px;
+  background-color: #0265FC;
+  padding: 10px;
+  margin-left: -5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#searchbar span.right input {
+  color: white;
+  /* font-weight: bold; */
+  background-color: transparent;
+  border: none;
+}
+
+#filters {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#filters h2 {
+  padding: 10px;
+}
+
+div.filter {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-left: 1em;
+  border: #ccc solid 1px;
+  border-radius: 30px;
+  border-left: none;
+  padding-right: 15px;
+  white-space: nowrap;
+}
+
+div.filter i {
+  padding: 15px;
+  color: #0265FC;
+  background-color: #cbe0ff;
+  border: #cbe0ff solid 1px;
+  border-radius: 30px;
+  margin-left: -3px;
+}
+
+div.filter span {
+  margin-left: 5px;
+}
+
+div.filter a {
+  color: black;
+}
+
+#hostings p.info i {
+  color: #0265FC;
+  border-radius: 20px;
+  border: #ccc solid 1px;
+  padding: 10px 15px;
+  margin: 10px;
+}
 * {
   margin: 0;
   padding: 0;
