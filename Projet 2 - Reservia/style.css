@@ -447,6 +447,7 @@ flex-direction: column;
   .activites {
   display:grid;
   height: auto;
+  gap: 27px;
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: repeat (2, 1fr);
   grid-template-areas: 
@@ -454,8 +455,13 @@ flex-direction: column;
     "a c d f";
 }
 .activites .img1, .img2, .img3, .img4, .img5, .img6 {
-  
-}
+  display :flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden ;
+  }
 .activites img {
   width: 100%;
   height: 100%;
@@ -485,3 +491,57 @@ flex-direction: column;
   .img6 {
     grid-area: f;
   }
+@media screen and (max-width: 1024px){
+  .activites{
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  grid-template-areas: 
+    "a b d"
+    "e c f";
+  }
+}
+@media screen and (max-width: 768px){
+  .activites{
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (3, 1fr);
+  grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+  }
+}
+
+.footer{
+  display: flex;
+  width: 100%;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows:repeat(1, 1fr;);
+
+}
+
+.propos{
+  display: flex;
+  justify-content: left;
+  width: 33.33%;
+  height: 100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hebergement{
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+  margin-left:auto;
+  margin-right:auto;
+  height:100px;
+}
+
+.assistance{
+  display: flex;
+  justify-content: right;
+   width: 33.33%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
